@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Tokushoho() {
   return (
     <main className="min-h-screen bg-black text-white py-20 px-4 sm:px-6">
@@ -35,7 +37,10 @@ export default function Tokushoho() {
                   </>,
                 ],
                 ["販売価格", "各サービスページに税込価格で表示されています。"],
-                ["お支払い方法", "銀行振込・クレジットカード・その他電子決済に対応。"],
+                [
+                  "お支払い方法",
+                  "銀行振込・クレジットカード・その他電子決済に対応。",
+                ],
                 [
                   "お支払い時期",
                   "ご契約確定後、請求書発行から7日以内にお支払いをお願いしております。",
@@ -69,14 +74,14 @@ export default function Tokushoho() {
           </table>
         </div>
 
-        {/* ボタン */}
+        {/* ✅ トップへ戻るボタン */}
         <div className="text-center mt-12">
-          <a
+          <Link
             href="/"
             className="inline-block bg-gradient-to-r from-cyan-500 to-purple-500 text-white px-6 sm:px-8 py-3 rounded-full font-semibold hover:opacity-90 transition shadow-md hover:shadow-cyan-500/30"
           >
             トップページへ戻る
-          </a>
+          </Link>
         </div>
       </div>
     </main>
