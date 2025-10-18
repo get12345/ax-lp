@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function PrivacyPolicy() {
   return (
     <main className="min-h-screen bg-black text-white py-20 px-4 sm:px-6">
@@ -104,14 +106,14 @@ export default function PrivacyPolicy() {
           </section>
         </div>
 
-        {/* トップへ戻るボタン */}
+        {/* ✅ トップへ戻るボタン（修正版） */}
         <div className="text-center mt-12">
-          <a
+          <Link
             href="/"
             className="inline-block bg-gradient-to-r from-cyan-500 to-purple-500 text-white px-6 sm:px-8 py-3 rounded-full font-semibold hover:opacity-90 transition shadow-md hover:shadow-cyan-500/30"
           >
             トップページへ戻る
-          </a>
+          </Link>
         </div>
       </div>
     </main>
